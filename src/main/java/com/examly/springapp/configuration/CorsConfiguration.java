@@ -10,7 +10,7 @@ public class CorsConfiguration implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-        .allowedOrigins("https://sciencefairbackend.onrender.com", "http://localhost:5173")
+        .allowedOrigins("http://localhost:5173", "https://sciencefair-1907.web.app")
         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH")
         .allowedHeaders("*")
         .maxAge(3600);

@@ -111,7 +111,8 @@ public class SecurityConfig {
         CorsConfiguration cfg = new CorsConfiguration();
         cfg.setAllowedOrigins(List.of(
             "https://8081-cbcfadadebd329831151bccfaccecfeight.premiumproject.examly.io",
-            "http://localhost:5173"
+            "http://localhost:5173",
+            "https://sciencefair-1907.web.app"
         ));
         cfg.setAllowedMethods(List.of("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
         cfg.setAllowedHeaders(List.of("*"));
